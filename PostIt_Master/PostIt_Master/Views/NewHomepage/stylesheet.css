@@ -1,0 +1,135 @@
+#wrapper {
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(85, 85, 85);
+    background-size: cover;
+    font-family: Georgia, serif;
+}
+
+.titleHeader {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 120px;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(245, 179, 50);
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.title {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px rgb(245, 179, 50);
+    padding-left: 40px;
+}
+
+.signinBanner {
+    clear: both;
+    text-align: center;
+    width: 1200px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 5px #000000;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.signinForm {
+	padding-top: 9px;
+	padding-right: 7px;
+	float: right;
+}
+
+.description {
+    float: left;
+    width: 190px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px #000000;
+    clear: left;
+	color: #FFFFFF
+}
+
+.descPadding {
+	padding-left: 5px;
+}
+
+.mainBody {
+	/* The image has a watermark currently, so if you find a better fit (orange-yellow to match Alex 1's original for right now), feel free to change it */
+	background-image: url("images/stickynotes.gif");
+	background-repeat: no-repeat;
+	background-size: 100%;
+    float: right;
+    width: 980px;
+    height: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    box-shadow: 5px 5px 5px #000000;
+    position: relative;
+}
+
+.signupArea {
+	width: 350px;
+	margin-top: 130px;
+	margin-left: 310px;
+}
+
+.signupFormHeader {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: #EEEEEECC;
+	border: solid;
+	border-color: #BBBBBB;
+	border-width: 1px;
+    position: relative;
+	text-align: center;
+}
+
+.signupForm {
+	padding-top: 30px;
+	padding-left: 100px;
+	padding-bottom: 30px;
+	background-color: #DDDDDDCC;
+	border: solid;
+	border-color: #AAAAAA;
+	border-width: 1px;
+    position: relative;
+}
+
+.btnSignup {
+	width: 147px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+footer {
+    clear: both;
+    text-align: right;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 5px #000000;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+footer a {
+    padding-right: 1px;
+}
