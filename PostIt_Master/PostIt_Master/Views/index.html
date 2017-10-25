@@ -2,76 +2,68 @@
 <html lang="en">
 
 <head>
-	<title>Noteable</title>
+	<title>Notable</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="Note.css" media="screen">
-	<link rel="icon" href="images/Sticky.ico" type="image/x-icon">
-
+	<link rel="stylesheet" href="stylesheet.css" media="screen">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
 	<div id="wrapper">
-
-		<header>
-			<h1 id="Title"> Notable</h1>
-
+		<header class="titleHeader">
+			<h1 class="title">Notable</h1>
 		</header>
-
-		<div id="tools">
-			<p>TOOLBAR for font size, bullets, color, etc.</p>
+		
+		<div class="tools">
+			<p><!--TOOLBAR for font size, bullets, color, etc.--></p>
 		</div>
-
-		<nav>
-			<ul>
+		
+		<nav class="leftColumn">
+			<ul class="noteNav">
 				<li>
-					<a> <b>CHORES</b></a>&nbsp;</li>
-				<li><a><b>GROCERIES</b></a>&nbsp;</li>
+					<a href="#" id="note1">CHORES</a>
+				</li>
 				<li>
-					<a> <b>BILLS</b></a>&nbsp;</li>
+					<a href="#" id="note2">GROCERIES</a>
+				</li>
 				<li>
-					<a> <b>DATES</b></a>&nbsp;</li>
+					<a href="#" id="note3">BILLS</a>
+				</li>
 				<li>
-					<a> <b>RANDOM</b></a>&nbsp;</li>
+					<a href="#" id="note4">DATES</a>
+				</li>
 			</ul>
 		</nav>
-
+		
 		<main>
-
-			<div id="right_column">
-				<div id="note">
-					<h1 id="note_title"> CHORES </h1>
-
+			<div class="rightColumn">
+				<div class="note">
+					<h1 class="noteTitle">CHORES</h1>
+					
 					<ul>
-						<li>Cut Grass</li>
-						<li>Walk Dog</li>
+						<li>Cut Dog</li>
+						<li>Walk Grass</li>
 						<li>Clean Kitchen</li>
-						<li>Do Dishes</li>
-						<li>Sweep Garage</li>
-						<li>Clean Windows</li>
+						<li>Do Windows</li>
+						<li>Sweep Dishes</li>
+						<li>Clean Garage</li>
 					</ul>
-
-					<div id="save">
-						SAVE
+					
+					<div class="btnSave">
+						<a href="#">SAVE</a>
 					</div>
-
-					<div id="delete">
-						DELETE
+					
+					<div class="btnDelete">
+						<a href="#">DELETE</a>
 					</div>
-
 				</div>
-
-
 			</div>
-
 		</main>
-
-		<footer>
-			<a>Sign Out</a>
+		
+		<footer class="signOutBar">
+			<a href="#">Sign Out</a>
 		</footer>
-
 	</div>
-
 </body>
 
 </html>

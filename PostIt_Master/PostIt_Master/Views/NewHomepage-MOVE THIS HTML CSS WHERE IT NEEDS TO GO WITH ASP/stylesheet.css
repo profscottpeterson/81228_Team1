@@ -23,10 +23,9 @@ body {
 .title {
     padding-top: 40px;
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 40px;
     color: #FFFFFF;
     text-shadow: 2px 2px rgb(245, 179, 50);
-    padding-left: 40px;
 }
 
 .signinBanner {
@@ -66,7 +65,7 @@ body {
 
 .mainBody {
 	/* The image has a watermark currently, so if you find a better fit (orange-yellow to match Alex 1's original for right now), feel free to change it */
-	background-image: url("images/stickynotes.gif");
+	background-image: url("../../images/stickynotes.gif");
 	background-repeat: no-repeat;
 	background-size: 100%;
     float: right;
