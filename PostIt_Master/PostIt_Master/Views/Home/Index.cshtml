@@ -1,31 +1,83 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using PostIt_Master.Models;
+@using System.Globalization;
+
+@model IEnumerable<PostIt_Master.Models.Note>
+
+@{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<head>
+	<title>Noteable</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="~/Content/Note.css" media="screen">
+	<link rel="icon" href="~/Content/Images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<header>
+			<h1 id="Title"> Notable</h1>
+
+		</header>
+
+		<div id="tools">
+			<p>TOOLBAR for font size, bullets, color, etc.</p>
+		</div>
+        <nav>
+            <ul>
+                @if (Model != null)
+                {
+                    foreach (var note in Model)
+                    {
+                        <li><b>@note.NoteTitle</b></li>
+                    }
+                }
+                <li>
+                    <a> <b>CHORES</b></a>&nbsp;
+                </li>
+                <li><a><b>GROCERIES</b></a>&nbsp;</li>
+                <li>
+                    <a> <b>BILLS</b></a>&nbsp;
+                </li>
+                <li>
+                    <a> <b>DATES</b></a>&nbsp;
+                </li>
+                <li>
+                    <a> <b>RANDOM</b></a>&nbsp;
+                </li>
+            </ul>
+        </nav>
+
+		<main>
+
+			<div id="right_column">
+				<div id="note">
+                    @Html.Partial("~/Views/Notes/_CreateNote.cshtml", CreateNote.findNote(Model))
+					@*<div id="save">
+						SAVE
+					</div>
+					<div id="delete">
+						DELETE
+					</div>*@
+				</div>
+			</div>
+
+		</main>
+
+		<footer>
+			<a>Sign Out</a>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
