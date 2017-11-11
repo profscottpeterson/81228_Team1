@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Notable</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css" media="screen">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="titleHeader">
+            <h1 class="title">Notable</h1>
+        </header>
+
+
+
+        <nav class="leftColumn">
+            <ul id="noteNav">
+                <li>
+                    <a href="#" id="note1">CHORES</a><a class="x" onclick="deleteNote(this)">   x</a>
+                </li>
+                <li>
+                    <a href="#" id="note2">GROCERIES</a><a class="x" onclick="deleteNote(this)">   x</a>
+                </li>
+                <li>
+                    <a href="#" id="note3">BILLS</a><a class="x" onclick="deleteNote(this)">   x</a>
+                </li>
+                <li>
+                    <a href="#" id="note4">DATES</a><a class="x" onclick="deleteNote(this)">   x</a>
+                </li>
+            </ul>
+            <div id="addNote" onclick="addNote()"><a> + </a></div>
+        </nav>
+
+        <main>
+            <div class="rightColumn">
+                <div id="changeColor">
+                    <h3>Choose Color:</h3>
+                    <div id="PinkColor" onclick="pink()">
+                        <a href="#"></a>
+                    </div>
+                    <div id="BlueColor" onclick="blue()">
+                        <a href="#"></a>
+                    </div>
+                    <div id="YellowColor" onclick="yellow()">
+                        <a href="#"></a>
+                    </div>
+                    <div id="CustomColor" onclick="pickColor()">
+                      <a href="#"></a>
+                      <input type='color' name="colorPicker" value="#FBEF65" id="colorPicker" title="Color">
+                    </div>
+                </div>
+                <div id="note">
+
+                    <textarea id="noteTitle" placeholder="Title"></textarea>
+                    <textarea id="noteText" placeholder="Note details"></textarea>
+
+                    <div class="btnSave">
+                        <a href="#">SAVE</a>
+                    </div>
+
+                    <div class="btnDelete">
+                        <a href="#">DELETE</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="signOutBar">
+            <a href="#">Sign Out</a>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script type="text/javascript" src="jquery.min.js"><\/script>')
+    </script>
+    <script src="color.js"></script>
+</body>
+
+</html>

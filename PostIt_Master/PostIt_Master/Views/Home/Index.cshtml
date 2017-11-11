@@ -5,7 +5,8 @@
 
 @{
         ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
+        //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -14,25 +15,17 @@
 <head>
 	<title>Noteable</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="~/Content/Note.css" media="screen">
+	<link rel="stylesheet" href="~/Content/stylesheet.css" media="screen">
 	<link rel="icon" href="~/Content/Images/favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
-
 	<div id="wrapper">
-
-		<header>
-			<h1 id="Title"> Notable</h1>
-
-		</header>
-
-		<div id="tools">
-			<p>TOOLBAR for font size, bullets, color, etc.</p>
-		</div>
-        <nav>
-            <ul>
+        <header class="titleHeader">
+            <h1 class="title">Notable</h1>
+        </header>
+        <nav class="leftColumn">
+            <ul id="noteNav">
                 @if (Model != null)
                 {
                     foreach (var note in Model)
@@ -40,43 +33,40 @@
                         <li><b>@note.NoteTitle</b></li>
                     }
                 }
-                <li>
-                    <a> <b>CHORES</b></a>&nbsp;
-                </li>
-                <li><a><b>GROCERIES</b></a>&nbsp;</li>
-                <li>
-                    <a> <b>BILLS</b></a>&nbsp;
-                </li>
-                <li>
-                    <a> <b>DATES</b></a>&nbsp;
-                </li>
-                <li>
-                    <a> <b>RANDOM</b></a>&nbsp;
-                </li>
             </ul>
         </nav>
+        <main>
+        <div class="rightColumn">
+            <div id="changeColor">
+                <h3>Choose Color:</h3>
+                <div id="PinkColor" onclick="pink()">
+                    <a href="#"></a>
+                </div>
+                <div id="BlueColor" onclick="blue()">
+                    <a href="#"></a>
+                </div>
+                <div id="YellowColor" onclick="yellow()">
+                    <a href="#"></a>
+                </div>
+                <div id="CustomColor" onclick="pickColor()">
+                    <a href="#"></a>
+                    <input type='color' name="colorPicker" value="#FBEF65" id="colorPicker" title="Color">
+                </div>
+            </div>
+            @Html.Partial("~/Views/Notes/_CreateNote.cshtml", CreateNote.findNote(Model))
+            </div>
 
-		<main>
+            </main>
+            <footer>
+                <a>Sign Out</a>
+            </footer>
 
-			<div id="right_column">
-				<div id="note">
-                    @Html.Partial("~/Views/Notes/_CreateNote.cshtml", CreateNote.findNote(Model))
-					@*<div id="save">
-						SAVE
-					</div>
-					<div id="delete">
-						DELETE
-					</div>*@
-				</div>
-			</div>
+        </div>
 
-		</main>
-
-		<footer>
-			<a>Sign Out</a>
-		</footer>
-
-	</div>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script type="text/javascript" src="~/Scripts/jquery.min.js"><\/script>')
+    </script>
+    <script src="~/Scripts/color.js"></script>
 
 </body>
 
