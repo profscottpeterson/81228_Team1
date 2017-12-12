@@ -1,0 +1,436 @@
+#wrapper {
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(66, 66, 66);
+    background-size: cover;
+    font-family: monospace;
+}
+
+
+.titleHeader {
+    background-color: #8cd0e3;
+    height: 120px;
+    font-size: 35px;
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    text-shadow: 4px 4px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.signoutBanner {
+    clear: both;
+    text-align: center;
+    width: 1200px;
+    height: 35px;
+    background-color: rgb(151, 214, 231);
+    box-shadow: 5px 5px 5px #000000;
+    color: #FFFFFF;
+    padding-bottom: 4px;
+}
+
+.signoutForm {
+	padding-top: 9px;
+	padding-right: 7px;
+    float: right;
+}
+
+#signoutbutton {
+    background-color: rgba(37, 84, 212, 0.842);
+    border: none;
+    color: white;
+	border-width: 1px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 23px;
+    border-radius: 6px;
+    width: 70px;
+    box-shadow: 4px 4px 4px #1a2268;
+}
+
+.boardview {
+    width: 1200px;
+    height: 800px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.leftColumn {
+    float: left;
+    width: 245px;
+    height: 720px;
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px #000000;
+    clear: left;
+    font-family: monospace;
+}
+
+.x {
+    height: 20px;
+}
+
+.leftColumn ul {
+    margin: 15px;
+    padding: 5px;
+}
+
+.leftColumn li {
+    list-style-type: none;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 15px black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    height: 18px;
+    width: 185px;
+    border: 4px solid;
+    clear: both;
+}
+
+.leftColumn li a {
+    width: 0px;
+}
+
+.leftColumn a:hover {
+    color: rgb(255, 77, 0);
+}
+
+.leftColumn a:focus {
+    color: rgb(245, 179, 50);
+}
+
+.leftColumn a:active {
+    color: rgb(223, 0, 0);
+}
+
+.leftColumn li:hover {
+    color: rgb(104, 223, 104);
+}
+
+.leftColumn li:focus {
+    color: rgb(245, 179, 50);
+}
+
+.leftColumn li:active {
+    color: rgb(5, 7, 250);
+}
+
+.rightColumn {
+    float: right;
+    width: 925px;
+    height: 720px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px #000000;
+    position: relative;
+}
+
+#addNote {
+    margin-top: 38px;
+    margin-bottom: 32px;
+    margin-left:45px;
+    height:50px;
+    width:50px;
+    float: left;
+}
+
+#boardview {
+    margin-top: 38px;
+    margin-bottom: 32px;
+    margin-left:35px;
+    height:55px;
+    width:55px;
+    float: left;
+    font-family: monospace;
+}
+
+#addNote a {
+    text-decoration: none;
+    color: rgba(51, 185, 226, 0.83);
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 1);
+    padding: 5px;
+}
+
+#addNote a:hover {
+    color:  rgb(68, 226, 68);
+
+}
+
+#addNote a img:hover {
+    border: 2px solid #FBEF65;
+}
+
+#addNote a:focus {
+    color: rgb(245, 179, 50);
+
+}
+
+#addNote a:active {
+    color: rgb(5, 7, 250);
+
+}
+
+#boardview a img:hover {
+    border: 2px solid #FBEF65;
+}
+
+.note {
+    width: 480px;
+    height: 480px;
+    margin-top:30px;
+    margin-left: 120px;
+    color: #000000;
+    box-shadow: 5px 5px 25px #000000;
+    position: relative;
+    display: none;
+    border-radius: 10px;
+}
+
+.noteTitle {
+    resize: none;
+    background: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.noteText {
+    resize: none;
+    background: rgba(0, 0, 0, 0);
+    font-size: 45px;
+    width: 435px;
+    height: 375px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.noteBoardNote {
+    width: 180px;
+    height: 180px;
+    margin-top:30px;
+    margin-left: 90px;
+    color: #000000;
+    box-shadow: 5px 5px 25px #000000;
+    position: relative;
+    border-radius: 10px;
+    float:left;
+}
+
+.noteBoardTitle {
+    resize: none;
+    background: rgba(0, 0, 0, 0);
+    font-size: 11px;
+    width: 120px;
+    height: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    overflow: hidden;
+}
+
+.noteBoardText {
+    resize: none;
+    background: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    width: 156px;
+    height: 130px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: none;
+    overflow: hidden;
+}
+
+
+.leftColumn .x {
+    color: rgb(144, 25, 25);
+    font-weight: bold;
+}
+
+#changeColor {
+    margin-left: 100px;
+    margin-top: 40px;
+    color: black;
+}
+
+#YellowColor a, #BlueColor a, #PinkColor a, #CustomColor a{
+    float:right;
+    clear:right;
+}
+
+#PinkColor a {
+    width: 60px;
+    height: 60px;
+    margin-right: 170px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: pink;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #555522;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+
+#PinkColor a:hover {
+    color: #000000;
+    border-color: white;
+}
+
+#PinkColor a:focus {
+    color: #000000;
+}
+
+#PinkColor a:active {
+    color: #000000;
+}
+
+#BlueColor a {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #8cd0e3;
+    margin-right: 170px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #555522;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+
+#BlueColor a:hover {
+    color: #000000;
+    border-color: white;
+}
+
+#BlueColor a:focus {
+    color: #000000;
+}
+
+#BlueColor a:active {
+    color: #000000;
+}
+
+#YellowColor a {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #FBEF65;
+    margin-right: 170px;
+    margin-top: 83px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #555522;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+
+#YellowColor a:hover {
+    color: #000000;
+    border-color: white;
+}
+
+#YellowColor a:focus {
+    color: #000000;
+}
+
+#YellowColor a:active {
+    color: #000000;
+}
+
+#CustomColor a {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    /*background: rgb(187, 187, 187);*/
+    background-image: url("../images/colormix.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 170px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #555522;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+
+#CustomColor a:hover {
+    color: #000000;
+    border-color: white;
+}
+
+#CustomColor a:focus {
+    color: #000000;
+}
+
+#CustomColor a:active {
+    color: #000000;
+}
+
+#colorPicker { visibility: hidden; }
